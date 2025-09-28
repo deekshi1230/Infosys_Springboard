@@ -1,7 +1,7 @@
 # Infosys_Springboard
 Assignments and Projects for Infosys Springboard
 This folder contains the notebook and results for parsing code snippets using AST, tokenization, and embeddings with MiniLM, DistilRoBERTa, and MPNet.
- Background
+## Background
 In modern NLP and code intelligence, embeddings play a crucial role in representing text or source code as dense vectors.  
 This project applies the idea to **Python code snippets**, where we:
 1. Parse the code using **Abstract Syntax Trees (AST)** to extract structural information (functions, classes, imports, patterns).
@@ -12,7 +12,7 @@ This project applies the idea to **Python code snippets**, where we:
 This helps us understand:
 - Which models capture structural similarity better.
 - How embeddings cluster for different types of code snippets.
-- Methodology
+## Methodology
 
 ### Step 1: Code Snippets
 We selected **10 Python snippets** that include:
