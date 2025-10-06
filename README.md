@@ -42,3 +42,36 @@ def fib(n):
         res.append(a)
         a, b = b, a + b
     return res
+Step 3: Tokenization
+
+The source code was tokenized into lexical elements (keywords, identifiers, operators, literals).
+
+Used Python’s tokenize library for precise extraction of tokens.
+
+Step 4: Embedding Generation
+
+Processed code representations were passed into transformer models:
+
+sentence-transformers/all-MiniLM-L6-v2
+
+distilroberta-base
+
+all-mpnet-base-v2
+
+Each model generated vector embeddings for analysis and comparison.
+
+Step 5: Similarity Analysis
+
+Cosine similarity and clustering were applied to analyze how snippets with similar logic were grouped.
+
+Comparative results helped identify which model better captured semantic similarity across code samples.
+
+Key Learnings
+
+AST provides strong structural insight, enhancing embedding interpretation.
+
+MPNet showed higher semantic consistency between functionally similar snippets.
+
+MiniLM was efficient and performed well for short snippets.
+
+The project deepened understanding of code embeddings, representation learning, and semantic search for source code.
