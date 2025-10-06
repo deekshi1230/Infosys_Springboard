@@ -33,16 +33,6 @@ We selected **10 Python snippets** that include:
   - **Imports** (`import ...`, `from ... import ...`)
   - **Patterns**: loops, recursion, decorators, generators  
 
-Example (for a Fibonacci function):
-```python
-def fib(n):
-    a, b = 0, 1
-    res = []
-    for _ in range(n):
-        res.append(a)
-        a, b = b, a + b
-    return res
-
 Step 3: Tokenization
 The source code was tokenized into lexical elements (keywords, identifiers, operators, literals).
 Used Python’s tokenize library for precise extraction of tokens.
