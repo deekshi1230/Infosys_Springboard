@@ -64,9 +64,12 @@ Scatter plots to show clustering behavior
 
  ## Sample Results
 Code Snippet Pair	MiniLM Similarity	DistilRoBERTa	MPNet	Closest Match
-Fibonacci ↔ Factorial	0.72	0.68	0.81	MPNet
-List Sum ↔ Array Sum	0.89	0.77	0.85	MiniLM
-Class Parser ↔ Decorator Example	0.56
+| Code Snippet Pair                | MiniLM Similarity | DistilRoBERTa | MPNet    | Closest Match |
+| -------------------------------- | ----------------- | ------------- | -------- | ------------- |
+| Fibonacci ↔ Factorial            | 0.72              | 0.68          | **0.81** | MPNet         |
+| List Sum ↔ Array Sum             | **0.89**          | 0.77          | 0.85     | MiniLM        |
+| Class Parser ↔ Decorator Example | 0.56              | 0.61          | **0.68** | MPNet         |
+
 
 ## Key Learnings
 AST parsing gives interpretable insight into code’s logic and structure.
