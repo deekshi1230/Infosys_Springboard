@@ -33,22 +33,22 @@ We selected **10 Python snippets** that include:
   - **Imports** (`import ...`, `from ... import ...`)
   - **Patterns**: loops, recursion, decorators, generators  
 
-Step 3: Tokenization
+## Step 3: Tokenization
 The source code was tokenized into lexical elements (keywords, identifiers, operators, literals).
 Used Python’s tokenize library for precise extraction of tokens.
 
-Step 4: Embedding Generation
+## Step 4: Embedding Generation
 Processed code representations were passed into transformer models:
 sentence-transformers/all-MiniLM-L6-v2
 distilroberta-base
 all-mpnet-base-v2
 Each model generated vector embeddings for analysis and comparison.
 
-Step 5: Similarity Analysis
+## Step 5: Similarity Analysis
 Cosine similarity and clustering were applied to analyze how snippets with similar logic were grouped.
 Comparative results helped identify which model better captured semantic similarity across code samples.
 
-Key Learnings
+## Key Learnings
 AST provides strong structural insight, enhancing embedding interpretation.
 MPNet showed higher semantic consistency between functionally similar snippets.
 MiniLM was efficient and performed well for short snippets.
